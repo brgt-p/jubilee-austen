@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jubilee Austen | Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -16,58 +18,69 @@
 <body>
     <header class="homepage-hero">
         <div class="content-wrapper">
-            <h1>Jubilee Austen</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="projects/index.html">Projects</a></li>
+            <a href="#">
+                <h1 class="homepage-title">Jubilee Austen</h1>
+            </a>
+            <div class="homepage-hero__divider"></div>
+            <nav class="navigation">
+                <ul class="nav-list row">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">Home</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects/index.html">Projects</a></li>
                 </ul>
             </nav>
-            <h2>Hi, I'm a developer that loves clean & elegant code.</h2>
+            <h2 class="homepage-subtitle">Hi, I'm a developer that loves clean & elegant code.</h2>
         </div>
     </header>
 
     <main>
         <section id="about">
             <div class="content-wrapper">
-                <h2>A little bit about me.</h2>
-                <p>My tech journey started with a degree in journalism. I loved researching,
-                    writing, and sharing my voice online, but something felt missing. I wished
-                    for a way to share and display information exactly the way I wanted. That's
-                    when I discovered and fell in love with coding and web design!</p>
-                <p>As a front end developer, I pride myself on writing code that's easy to read
-                    and build upon while still looking great. My goal with every site is to provide
-                    a top-of-the-line user experience. Besides web development, I enjoy
-                    gardening and spending time with my small (but growing!) family.</p>
+                <div class="about-content row">
+                    <h2 class="about-title">A little bit about me.</h2>
+                    <div class="about-text row">
+                        <p class="about-col">My tech journey started with a degree in journalism. I loved researching,
+                            writing, and sharing my voice online, but something felt missing. I wished
+                            for a way to share and display information exactly the way I wanted. That's
+                            when I discovered and fell in love with coding and web design!</p>
+                        <p class="about-col">As a front end developer, I pride myself on writing code that's easy to
+                            read
+                            and build upon while still looking great. My goal with every site is to provide
+                            a top-of-the-line user experience. Besides web development, I enjoy
+                            gardening and spending time with my small (but growing!) family.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="skills">
             <div class="content-wrapper">
-                <h2>Developer Skills</h2>
-                <div class="skill-list">
-                    <img src="img/html-icon.png" alt="html icon">
-                    <h3>HTML & CSS</h3>
-                    <p>I pride myself on my organized and well-formatted HTML and CSS. All my
-                        code is tested to ensure it's valid, accessible for all users, and works great
-                        on the major browsers.</p>
-                </div>
-                <div class="skill-list">
-                    <img src="img/pencil-icon.png" alt="pencil icon">
-                    <h3>Design to Code</h3>
-                    <p>If you have a design, I can turn it into a website! I'll use the exact colors,
-                        fonts, and imagery you need. You provide the design comp, and I'll code up
-                        a site just for you.</p>
-                </div>
-                <div class="skill-list">
-                    <img src="img/git-icon.png" alt="github icon">
-                    <h3>Git & GitHub</h3>
-                    <p>I never work on a project without my best friends Git and GitHub! I can
-                        collaborate with your team on any codebase and adjust to your team's
-                        version control workflow.</p>
+                <h2 class="skills-title">Developer Skills</h2>
+                <div class="skills-content">
+                    <div class="skill-list">
+                        <img src="img/html-icon.png" class="skills-icon" alt="html icon">
+                        <h3 class="skills-subtitle">HTML & CSS</h3>
+                        <p class="skills-col">I pride myself on my organized and well-formatted HTML and CSS. All my
+                            code is tested to ensure it's valid, accessible for all users, and works great
+                            on the major browsers.</p>
+                    </div>
+                    <div class="skill-list">
+                        <img src="img/pencil-icon.png" class="skills-icon" alt="pencil icon">
+                        <h3 class="skills-subtitle">Design to Code</h3>
+                        <p class="skills-col">If you have a design, I can turn it into a website! I'll use the exact
+                            colors,
+                            fonts, and imagery you need. You provide the design comp, and I'll code up
+                            a site just for you.</p>
+                    </div>
+                    <div class="skill-list">
+                        <img src="img/git-icon.png" class="skills-icon" alt="github icon">
+                        <h3 class="skills-subtitle">Git & GitHub</h3>
+                        <p class="skills-col">I never work on a project without my best friends Git and GitHub! I can
+                            collaborate with your team on any codebase and adjust to your team's
+                            version control workflow.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -80,23 +93,25 @@
                     alt="keyboard, glasses, notepads and pencils on a desktop" id="contact-picture">
             </div>
             <div class="contact-info">
-                <h2>Like What You See?</h2>
-                <h3 id="email-header">Let's meet for a cup of coffee.</h3>
-                <a href="mailto:hi@JubileeAusten.com"><img src="img/envelope.png"
-                        alt="envelope icon" id="envelope">hi@JubileeAusten.com</a>
-                <h3 id="socialmedia-header">Or, follow me on social media:</h3>
-                <ul>
-                    <li><a href="https://www.twitter.com" target="_blank"><img src="img/twitter.png"
-                                alt="twitter icon"></a></li>
-                    <li><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"
-                                alt="facebook icon"></a></li>
-                    <li><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"
-                                alt="instagram icon"></a></li>
-                    <li><a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png"
-                                alt="linkedin icon"></a></li>
-                    <li><a href="https://www.github.com" target="_blank"><img src="img/github.png"
-                                alt="github icon"></a></li>
-                </ul>
+                <h2 class="contact-title">Like What You See?</h2>
+                <div class="socials-content">
+                    <h3 class="contact-subtitle" id="email-header">Let's meet for a cup of coffee.</h3>
+                    <a href="mailto:hi@JubileeAusten.com" class="email-address"><img src="img/envelope.png"
+                            alt="envelope icon" id="envelope" class="socials-icons">hi@JubileeAusten.com</a>
+                    <h3 class="contact-subtitle" id="socialmedia-header">Or, follow me on social media:</h3>
+                    <ul class="socialmedia-icons-list">
+                        <li><a href="https://www.twitter.com" target="_blank"><img src="img/twitter.png"
+                                    alt="twitter icon" class="socials-icons"></a></li>
+                        <li><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"
+                                    alt="facebook icon" class="socials-icons"></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png"
+                                    alt="instagram icon" class="socials-icons"></a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><img src="img/linkedin.png"
+                                    alt="linkedin icon" class="socials-icons"></a></li>
+                        <li><a href="https://www.github.com" target="_blank"><img src="img/github.png" alt="github icon"
+                                    class="socials-icons"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
