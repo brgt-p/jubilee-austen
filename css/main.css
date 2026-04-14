@@ -11,8 +11,6 @@
     --ff-special: 'Lora', serif;
 
     --fs-h1: 1.875rem;
-
-
     --fs-h2-header: 4.5rem;
     --fs-h2: 2.25rem;
     --fs-h3-email: 1.5rem;
@@ -25,8 +23,14 @@
 
     --section-spacing: 50px;
 
-    @media (min-width: 740px) {
+    @media (width > 740px) {
         --section-spacing: 100px;
+    }
+
+    @media (width < 740px) {
+        --fs-h2-header: 3.5rem;
+        --fs-h1: 1.4rem;
+        --fs-nav: 1rem;
     }
 }
 
@@ -63,10 +67,6 @@ h3 {
     font-family: var(--ff-special);
 }
 
-h2 {
-    padding-block: 25px;
-}
-
 h3 {
     line-height: var(--lh-h3-email);
     margin-top: 25px;
@@ -100,18 +100,13 @@ img {
     height: 100vh;
     background-size: cover;
     background-position: center;
-
-
-    @media (min-width: 740px) {
-        /* height: 90vh; */
-    }
 }
 
 .title {
     color: var(--clr-text-h1);
     margin: 15px auto;
 
-    @media (min-width: 740px) {
+    @media (width > 740px) {
         margin: 25px 0;
     }
 }
@@ -122,7 +117,7 @@ img {
     opacity: 0.2;
     margin-block: 10px;
 
-    @media (min-width: 740px) {
+    @media (width > 740px) {
         display: none;
     }
 }
@@ -130,12 +125,13 @@ img {
 nav {
     display: flex;
     flex-direction: column;
-    padding-block: 50px;
+    padding-top: 50px;
 
-    @media (min-width: 740px) {
+    @media (width > 740px) {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding-block: 50px;
     }
 }
 
@@ -173,7 +169,7 @@ a:hover {
     line-height: var(--lh-h2-header);
     margin: 50px auto;
 
-    @media (min-width: 740px) {
+    @media (width > 740px) {
         margin: 50px 0;
     }
 }
@@ -193,7 +189,7 @@ a:hover {
     padding-top: 2rem;
 }
 
-@media (min-width: 1000px) {
+@media (width > 1000px) {
 
     #about .container {
         width: 80%;
@@ -236,14 +232,14 @@ a:hover {
     padding-block: 25px;
     max-width: 50ch;
 
-    @media (min-width: 740px) {
+    @media (width > 740px) {
         margin: 0 auto;
         max-width: 30ch;
 
     }
 }
 
-@media (min-width: 1000px) {
+@media (width > 1000px) {
     #skills .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -273,7 +269,7 @@ a:hover {
     align-items: center;
 
 
-    @media (min-width: 740px) {
+    @media (width > 740px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
