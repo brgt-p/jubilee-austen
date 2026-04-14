@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Jubilee Austen</title>
-    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,51 +15,54 @@
 
 <body>
     <header class="extra-hero">
-        <div class="content-wrapper">
-            <a href="../index.html">
-                <h1 class="homepage-title">Jubilee Austen</h1>
-            </a>
-            <div class="homepage-hero__divider"></div>
-            <nav class="navigation">
-                <ul class="nav-list row">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+        <div class="container">
+
+            <nav>
+                <a href="../index.html">
+                    <h1 class="title">Jubilee Austen</h1>
+                </a>
+                <div class="divider"></div>
+                <ul>
+                    <li class="nav__link"><a href="../index.html">Home</a></li>
+                    <li class="nav__link"><a href="../index.html#about">About</a></li>
+                    <li class="nav__link"><a href="../index.html#skills">Skills</a></li>
+                    <li class="nav__link"><a href="../index.html#contact">Contact</a></li>
+                    <li class="nav__link"><a href="#">Projects</a></li>
                 </ul>
+            </nav>
             </nav>
         </div>
     </header>
 
     <main>
         <section id="projects">
-            <div class="content-wrapper">
-                <h2 class="projects-title">Projects</h2>
-                <div class="projects-list">
-                    <div class="project-piece">
+            <div class="container">
+                <h2 class="projects__title">Projects</h2>
+                <div class="projects__list">
+                    <div class="project__piece">
                         <a href="https://skillcrush.github.io/206-rogue_pickings/" target="_blank"><img
                                 src="../img/rogue-pickings.png" alt="rogue pickings website"></a>
-                        <h3 class="projects-subtitle">Rogue Pickings</h3>
-                        <p class="projects-col">A simple home page perfect for a pop-up restaurant or food truck.
+
+                        <h3 class="projects__subtitle">Rogue Pickings</h3>
+                        <p class="projects__col">A simple home page perfect for a pop-up restaurant or food truck.
                             Originally a static website, I
                             converted it into a responsive design using Flexbox.</p>
                     </div>
-                    <div class="project-piece">
+                    <div class="project__piece">
                         <a href="https://skillcrush.github.io/206-unplugged_retreat/" target="_blank"><img
                                 src="../img/unplugged.png" alt="unplugged website"></a>
-                        <h3 class="projects-subtitle">Unplugged</h3>
-                        <p class="projects-col">A multi-page responsive website coded with Flexbox. This versatile
+                        <h3 class="projects__subtitle">Unplugged</h3>
+                        <p class="projects__col">A multi-page responsive website coded with Flexbox. This versatile
                             design has sections, including
                             a
                             cards design pattern, that can be repurposed for different sites.
                         </p>
                     </div>
-                    <div class="project-piece">
+                    <div class="project__piece">
                         <a href="https://skillcrush.github.io/guess-the-word/" target="_blank"><img
                                 src="../img/guess-the-word-game.png" alt="guess the word game website"></a>
-                        <h3 class="projects-subtitle">Guess the Word Game</h3>
-                        <p class="projects-col">Players guess the word by entering one letter at a time. If the player
+                        <h3 class="projects__subtitle">Guess the Word Game</h3>
+                        <p class="projects__col">Players guess the word by entering one letter at a time. If the player
                             guesses all the letters
                             correctly before they use up their allotted guess, they win!</p>
                     </div>
@@ -70,32 +72,33 @@
     </main>
 
     <footer id="contact">
-        <div class="content-wrapper">
+        <div class="container">
             <div class="contact-image">
-                <img src="../img/jess-bailey-q10VITrVYUM-unsplash.jpg"
-                    alt="keyboard, glasses, notepads and pencils on a desktop" id="contact-picture">
+                <img src="../img/jess-bailey-q10VITrVYUM-unsplash.jpg" alt="desktop" id="contact-img">
+
             </div>
             <div class="contact-info">
-                <h2 class="contact-title">Like What You See?</h2>
-                <div class="socials-content">
-                    <h3 class="contact-subtitle" id="email-header">Let's meet for a cup of coffee.</h3>
-                    <a href="mailto:hi@JubileeAusten.com" class="email-address"><img src="../img/envelope.png"
-                            alt="envelope icon" id="envelope" class="socials-icons">hi@JubileeAusten.com</a>
-                    <h3 class="contact-subtitle" id="socialmedia-header">Or, follow me on social media:</h3>
-                    <ul>
-                        <li><a href="https://www.twitter.com" target="_blank"><img src="../img/twitter.png"
-                                    alt="twitter icon" class="socials-icons"></a></li>
-                        <li><a href="https://www.facebook.com" target="_blank"><img src="../img/facebook.png"
-                                    alt="facebook icon" class="socials-icons"></a></li>
-                        <li><a href="https://www.instagram.com" target="_blank"><img src="../img/instagram.png"
-                                    alt="instagram icon" class="socials-icons"></a></li>
-                        <li><a href="https://www.linkedin.com" target="_blank"><img src="../img/linkedin.png"
-                                    alt="linkedin icon" class="socials-icons"></a></li>
-                        <li><a href="https://www.github.com" target="_blank"><img src="../img/github.png"
-                                    alt="github icon" class="socials-icons"></a></li>
-                    </ul>
-                </div>
+                <h2>Like What You See?</h2>
+                <h3 id="email-header">Let's meet for a cup of coffee.</h3>
+                <a id="email" href="mailto:hi@JubileeAusten.com"><img src="../img/envelope.png" alt="envelope icon"
+                        id="envelope">hi@JubileeAusten.com</a>
+                <h3 id="socialmedia-header">Or, follow me on social media:</h3>
+                <ul>
+                    <li><a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="twitter icon"
+                                aria-label="Twitter"></a>
+                    </li>
+                    <li><a href="https://facebook.com" target="_blank"><img src="../img/facebook.png"
+                                alt="facebook icon" aria-label="facebook"></a></li>
+                    <li><a href="https://instagram.com" target="_blank"><img src="../img/instagram.png"
+                                alt="instagram icon" aria-label="instagram"></a></li>
+                    <li><a href="https://linkedin.com" target="_blank"><img src="../img/linkedin.png"
+                                alt="linkedin icon" aria-label="linkedin"></a></li>
+                    <li><a href="https://github.com" target="_blank"><img src="../img/github.png" alt="github icon"
+                                aria-label="github"></a>
+                    </li>
+                </ul>
             </div>
+            <a id="go-to-top" href="#">Go to top</a>
         </div>
     </footer>
 </body>

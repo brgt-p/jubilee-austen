@@ -163,6 +163,11 @@ a:hover {
     color: var(--clr-text-h1);
 }
 
+nav a {
+    text-transform: none;
+    text-decoration: none;
+}
+
 .greeting {
     color: var(--clr-text-h2);
     font-size: var(--fs-h2-header);
@@ -278,6 +283,9 @@ a:hover {
 
 .contact-image {
     max-width: 90%;
+    @media (width < 740px) {
+        margin-bottom: 25px;
+    }
 }
 
 #contact-img {
@@ -340,4 +348,41 @@ a:hover {
 #go-to-top:hover {
     transform: translateY(-3px);
     transition: transform 0.3s ease;
+}
+
+/********** PROJECTS **********/
+
+#projects {
+    padding-block: 50px;
+}
+
+.projects__title {
+    text-align: center;
+    padding-block: 50px;
+}
+
+.project__piece p {
+    padding-bottom: 50px;
+}
+
+@media (width > 740px) {
+    .projects__list {
+        display: grid;
+        gap: 3rem;
+        grid-template-areas: "project1 project2"
+            "project3 project4";
+    }
+
+    .project__piece:nth-child(1) {
+        grid-area: project1;
+    }
+
+    .project__piece:nth-child(2) {
+        grid-area: project2;
+    }
+
+    .project__piece:nth-child(3) {
+        grid-area: project3;
+        justify-items: center;
+    }
 }
