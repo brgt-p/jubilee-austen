@@ -108,6 +108,7 @@ img {
 
 .title {
     color: var(--clr-text-h1);
+    padding-inline: 25px;
 
     @media (width > 1065px) {
         margin: 25px 0;
