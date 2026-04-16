@@ -14,22 +14,21 @@
 </head>
 
 <body>
-    <header class="extra-hero">
+    <header class="hero__projects">
         <div class="container">
 
-            <nav>
-                <a href="../index.html">
-                    <h1 class="title">Jubilee Austen</h1>
-                </a>
-                <div class="divider"></div>
+               <nav>
+                <h1 class="title">Jubilee Austen</h1>
+                <input type="checkbox" id="nav__toggle" class="nav__toggle">
+                <label for="nav__toggle" class="nav__toggle-label">
+                    <span></span> </label>
                 <ul>
-                    <li class="nav__link"><a href="../index.html">Home</a></li>
+                    <li class="nav__link"><a href="../index.html#">Home</a></li>
                     <li class="nav__link"><a href="../index.html#about">About</a></li>
                     <li class="nav__link"><a href="../index.html#skills">Skills</a></li>
                     <li class="nav__link"><a href="../index.html#contact">Contact</a></li>
-                    <li class="nav__link"><a href="#">Projects</a></li>
+                    <li class="nav__link"><a href="projects/index.html">Projects</a></li>
                 </ul>
-            </nav>
             </nav>
         </div>
     </header>
@@ -39,32 +38,40 @@
             <div class="container">
                 <h2 class="projects__title">Projects</h2>
                 <div class="projects__list">
-                    <div class="project__piece">
+                    <div class="project__piece rogue">
                         <a href="https://skillcrush.github.io/206-rogue_pickings/" target="_blank"><img
-                                src="../img/rogue-pickings.png" alt="rogue pickings website"></a>
+                                src="../img/rogue-pickings.png" alt="rogue pickings website" class="project__image"></a>
 
-                        <h3 class="projects__subtitle">Rogue Pickings</h3>
-                        <p class="projects__col">A simple home page perfect for a pop-up restaurant or food truck.
-                            Originally a static website, I
-                            converted it into a responsive design using Flexbox.</p>
+                        <div class="project__description">
+                            <h3 class="projects__subtitle">Rogue Pickings</h3>
+                            <p class="projects__col">A simple home page perfect for a pop-up restaurant or food truck.
+                                Originally a static website, I
+                                converted it into a responsive design using Flexbox.</p>
+                        </div>
                     </div>
-                    <div class="project__piece">
+                    <div class="project__piece unplugged">
                         <a href="https://skillcrush.github.io/206-unplugged_retreat/" target="_blank"><img
-                                src="../img/unplugged.png" alt="unplugged website"></a>
-                        <h3 class="projects__subtitle">Unplugged</h3>
-                        <p class="projects__col">A multi-page responsive website coded with Flexbox. This versatile
-                            design has sections, including
-                            a
-                            cards design pattern, that can be repurposed for different sites.
-                        </p>
+                                src="../img/unplugged.png" alt="unplugged website" class="project__image"></a>
+                        <div class="project__description">
+                            <h3 class="projects__subtitle">Unplugged</h3>
+                            <p class="projects__col">A multi-page responsive website coded with Flexbox. This versatile
+                                design has sections, including
+                                a
+                                cards design pattern, that can be repurposed for different sites.
+                            </p>
+                        </div>
                     </div>
-                    <div class="project__piece">
+                    <div class="project__piece guess">
                         <a href="https://skillcrush.github.io/guess-the-word/" target="_blank"><img
-                                src="../img/guess-the-word-game.png" alt="guess the word game website"></a>
-                        <h3 class="projects__subtitle">Guess the Word Game</h3>
-                        <p class="projects__col">Players guess the word by entering one letter at a time. If the player
-                            guesses all the letters
-                            correctly before they use up their allotted guess, they win!</p>
+                                src="../img/guess-the-word-game.png" alt="guess the word game website"
+                                class="project__image"></a>
+                        <div class="project__description">
+                            <h3 class="projects__subtitle">Guess the Word Game</h3>
+                            <p class="projects__col">Players guess the word by entering one letter at a time. If the
+                                player
+                                guesses all the letters
+                                correctly before they use up their allotted guess, they win!</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,16 +80,16 @@
 
     <footer id="contact">
         <div class="container">
-            <div class="contact-image">
-                <img src="../img/jess-bailey-q10VITrVYUM-unsplash.jpg" alt="desktop" id="contact-img">
+            <div class="contact__image">
+                <img src="../img/jess-bailey-q10VITrVYUM-unsplash.jpg" alt="desktop" id="contact__img">
 
             </div>
-            <div class="contact-info">
+            <div class="contact__info">
                 <h2>Like What You See?</h2>
-                <h3 id="email-header">Let's meet for a cup of coffee.</h3>
+                <h3 id="email__header">Let's meet for a cup of coffee.</h3>
                 <a id="email" href="mailto:hi@JubileeAusten.com"><img src="../img/envelope.png" alt="envelope icon"
                         id="envelope">hi@JubileeAusten.com</a>
-                <h3 id="socialmedia-header">Or, follow me on social media:</h3>
+                <h3 id="socialmedia__header">Or, follow me on social media:</h3>
                 <ul>
                     <li><a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="twitter icon"
                                 aria-label="Twitter"></a>

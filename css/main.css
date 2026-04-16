@@ -97,49 +97,35 @@ img {
 
 .hero {
     background: url('../img/full-background.png') no-repeat var(--clr-bg-header);
-    height: 100vh;
+    height: 70vh;
     background-size: cover;
     background-position: center;
+
+    @media (width > 1065px) {
+        height: 90vh;
+    }
 }
 
 .title {
     color: var(--clr-text-h1);
-    margin: 15px auto;
 
-    @media (width > 740px) {
+    @media (width > 1065px) {
         margin: 25px 0;
-    }
-}
-
-.divider {
-    height: 1px;
-    background-color: var(--clr-text-nav);
-    opacity: 0.2;
-    margin-block: 10px;
-
-    @media (width > 740px) {
-        display: none;
     }
 }
 
 nav {
     display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-
-    @media (width > 740px) {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding-block: 50px;
-    }
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 50px;
 }
 
 ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 1rem;
     padding: 0;
 }
@@ -177,6 +163,92 @@ nav a {
     @media (width > 740px) {
         margin: 50px 0;
     }
+}
+
+/********** HAMBURGER MENU **********/
+
+
+.nav__toggle {
+    display: none;
+}
+
+.nav__toggle-label {
+    cursor: pointer;
+    padding: 1rem;
+    display: block;
+}
+
+.nav__toggle-label span,
+.nav__toggle-label span::before,
+.nav__toggle-label span::after {
+    display: block;
+    background: var(--clr-text-h1);
+    height: 2px;
+    width: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav__toggle-label span::before,
+.nav__toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav__toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav__toggle-label span::after {
+    top: 7px;
+}
+
+nav ul {
+    display: none;
+    width: 100%;
+    background: var(--clr-bg-skills);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 3rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav__toggle:checked~ul {
+    display: flex;
+}
+
+@media (width > 1065px) {
+    .nav__toggle-label {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: static;
+        background: inherit;
+        box-shadow: none;
+        max-width: 70%;
+    }
+}
+
+.nav__toggle:checked+.nav__toggle-label span {
+    background: transparent;
+}
+
+.nav__toggle:checked+.nav__toggle-label span::before {
+    transform: rotate(45deg);
+    bottom: 0;
+}
+
+.nav__toggle:checked+.nav__toggle-label span::after {
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 /********** ABOUT **********/
@@ -281,19 +353,20 @@ nav a {
     }
 }
 
-.contact-image {
+.contact__image {
     max-width: 90%;
+
     @media (width < 740px) {
         margin-bottom: 25px;
     }
 }
 
-#contact-img {
+#contact__img {
     border: 10px solid white;
     display: block;
 }
 
-#email-header {
+#email__header {
     padding-bottom: 15px;
 }
 
@@ -311,17 +384,17 @@ nav a {
 
 }
 
-.contact-info h3 {
+.contact__info h3 {
     font-weight: 400;
 }
 
-.contact-info ul {
+.contact__info ul {
     padding-top: 15px;
     padding-bottom: 25px;
     width: fit-content;
 }
 
-.contact-info li:hover {
+.contact__info li:hover {
     transform: translateY(-3px);
     transition: transform 0.3s ease;
 }
@@ -352,8 +425,17 @@ nav a {
 
 /********** PROJECTS **********/
 
+.hero__projects {
+    background: var(--clr-bg-header);
+}
+
 #projects {
     padding-block: 50px;
+}
+
+.project__piece {
+    margin-bottom: 50px 25px;
+    padding: 15px;
 }
 
 .projects__title {
@@ -361,28 +443,20 @@ nav a {
     padding-block: 50px;
 }
 
+.projects__subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
 .project__piece p {
     padding-bottom: 50px;
 }
 
-@media (width > 740px) {
+
+@media (width > 1065px) {
+
     .projects__list {
-        display: grid;
-        gap: 3rem;
-        grid-template-areas: "project1 project2"
-            "project3 project4";
-    }
-
-    .project__piece:nth-child(1) {
-        grid-area: project1;
-    }
-
-    .project__piece:nth-child(2) {
-        grid-area: project2;
-    }
-
-    .project__piece:nth-child(3) {
-        grid-area: project3;
-        justify-items: center;
+        display: flex;
+        gap: 2rem;
     }
 }
