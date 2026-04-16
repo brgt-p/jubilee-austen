@@ -114,6 +114,10 @@ img {
     }
 }
 
+.title a {
+    color: inherit;
+}
+
 nav {
     display: flex;
     flex-direction: row;
