@@ -67,7 +67,7 @@ h2 {
 
 h3 {
     line-height: var(--lh-h3-email);
-    margin-top: 25px;
+    margin-block-start: 25px;
     font-family: var(--ff-primary);
 }
 
@@ -286,7 +286,7 @@ nav ul {
 }
 
 .container__text p:last-of-type {
-    padding-top: 2rem;
+    padding-block-start: 2rem;
 }
 
 @media (width > 1065px) {
@@ -311,7 +311,7 @@ nav ul {
     }
 
     .container__text p:last-of-type {
-        padding-top: 0;
+        padding-block-start: 0;
     }
 }
 
@@ -352,7 +352,7 @@ nav ul {
 }
 
 #skills h3 {
-    padding-bottom: 1rem;
+    padding-block-end: 1rem;
 }
 
 /********** FOOTER **********/
@@ -380,7 +380,7 @@ nav ul {
     max-inline-size: 400px;
 
     @media (width < 740px) {
-        margin-bottom: 25px;
+        margin-block-end: 25px;
     }
 }
 
@@ -390,7 +390,7 @@ nav ul {
 }
 
 #email__header {
-    padding-bottom: 15px;
+    padding-block-end: 15px;
 }
 
 #email {
@@ -416,8 +416,8 @@ nav ul {
 }
 
 .contact__info ul {
-    padding-top: 15px;
-    padding-bottom: 25px;
+    padding-block-start: 15px;
+    padding-block-end: 25px;
 }
 
 .contact__socials li {
@@ -473,7 +473,7 @@ nav ul {
 }
 
 .project__piece {
-    margin-bottom: 50px 25px;
+    margin-block-end: 50px 25px;
     padding: 15px;
 }
 
@@ -484,11 +484,11 @@ nav ul {
 
 .projects__subtitle {
     text-align: center;
-    margin-bottom: 25px;
+    margin-block-end: 25px;
 }
 
 .project__piece p {
-    padding-bottom: 50px;
+    padding-block-end: 50px;
 }
 
 
