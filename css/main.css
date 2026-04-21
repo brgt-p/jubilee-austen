@@ -125,6 +125,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-block: 50px;
+    position: relative;
+
 }
 
 ul {
@@ -207,10 +209,6 @@ a:focus-visible {
     top: 7px;
 }
 
-nav {
-    position: relative;
-}
-
 nav ul {
     display: none;
     inline-size: 100%;
@@ -226,7 +224,19 @@ nav ul {
 
 .nav__toggle:checked~ul {
     display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (width > 1065px) {
@@ -391,11 +401,14 @@ nav ul {
     text-transform: none;
 }
 
+#email img {
+    transition: transform 0.3s ease;
+
+}
+
 #email img:hover,
 #email img:focus-visible {
     transform: translateY(-3px);
-    transition: transform 0.3s ease;
-
 }
 
 .contact__info h3 {
@@ -413,10 +426,15 @@ nav ul {
     text-align: center;
 }
 
-.contact__info li:hover,
-.contact__info li:focus-invisible {
-    transform: translateY(-3px);
+.contact__info li {
     transition: transform 0.3s ease;
+
+}
+
+.contact__info li:hover,
+.contact__info li:focus-visible {
+    transform: translateY(-3px);
+
 }
 
 #go-to-top {
