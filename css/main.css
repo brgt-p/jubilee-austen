@@ -95,11 +95,11 @@ img {
 
 .hero {
     background: url('../img/full-background.png') no-repeat var(--clr-bg-header);
-    block-size: 90vh;
+    block-size: 95vh;
     background-size: cover;
     background-position: center;
 
-    @media (width > 1065px) {
+    @media (width > 740px) {
         block-size: 80vh;
     }
 }
@@ -164,11 +164,6 @@ a:focus-visible {
     color: var(--clr-text-h2);
     font-size: var(--fs-h2-header);
     line-height: var(--lh-h2-header);
-    margin: 50px auto;
-
-    @media (width > 740px) {
-        margin: 50px 0;
-    }
 }
 
 /********** HAMBURGER MENU **********/
