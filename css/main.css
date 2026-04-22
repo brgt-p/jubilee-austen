@@ -37,7 +37,6 @@
 *::after {
     box-sizing: border-box;
     margin: 0;
-    /* outline: 1px solid red; */
 }
 
 html {
@@ -95,7 +94,6 @@ img {
 
 .hero {
     background: url('../img/full-background.png') no-repeat var(--clr-bg-header);
-    block-size: 95vh;
     background-size: cover;
     background-position: center;
 
